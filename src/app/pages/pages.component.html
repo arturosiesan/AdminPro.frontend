@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ava Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
+  </head>
+  <!-- <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
             <div class="container">
@@ -336,5 +339,22 @@
     </div>
 
     <script src="../../assets/js/pages.min.js"></script>
-</body>
+</body> -->
+  <body>
+    <app-header></app-header>
+
+    <router-outlet></router-outlet>
+
+    <app-footer></app-footer>
+
+    <div class="made-in-ayroui mt-4">
+      <a href="https://ayroui.com" target="_blank" rel="nofollow">
+        <img style="width: 220px" src="assets/images/ayroui.svg" />
+      </a>
+    </div>
+
+    <a href="#" class="scroll-top btn-hover">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+  </body>
 </html>

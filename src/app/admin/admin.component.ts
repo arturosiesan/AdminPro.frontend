@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './admin.component.css'
 })
 export class AdminComponent {
+  screenHeight: number;
+
+  constructor() {
+    this.screenHeight = window.innerHeight - 90;
+    console.log(this.screenHeight);
+  }
 
 }
